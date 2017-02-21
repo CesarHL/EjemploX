@@ -17,15 +17,16 @@ import com.ipn.escom.model.User;
 public class UserController extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
-    private static String INSERT_OR_EDIT = "/user.jsp";
-    private static String LIST_USER = "/listUser.jsp";
-    private UserDAO dao;
+    private static final String INSERT_OR_EDIT = "/user.jsp";
+    private static final String LIST_USER = "/listUser.jsp";
+    private final UserDAO dao;
 
     public UserController() {
         super();
         dao = new UserDAO();
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String forward = "";
         String action = request.getParameter("action");
@@ -51,6 +52,7 @@ public class UserController extends HttpServlet {
         view.forward(request, response);
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
         user.setFirstName(request.getParameter("firstName"));

@@ -101,7 +101,6 @@ public class UserDAO {
                 user.setEmail(rs.getString("email"));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
         }
 
         return user;

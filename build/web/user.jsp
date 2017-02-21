@@ -13,22 +13,40 @@
         <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
         <title>Add new user</title>
     </head>
-    <body>
+
+    <body class="container">
         <script>
             $(function () {
                 $('input[name=dob]').datepicker();
             });
         </script>
+        <div class="bs-example">
+            <nav  class="nav nav-pills">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
 
-    <nav>
+                        <a class="nav-link active" href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="glyphicon glyphicon-floppy-disk"></span> Download</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-    </nav>
 
-    <article class="container">
-
+    <article>
         <header>
             <h1>What Does WWF Do?</h1>
             <p>WTF mission:</p>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+                and build a future in which humans live in harmony with nature.</p>
         </header>
 
 
@@ -78,7 +96,9 @@
     <script src="js/bootstrap.min.js"></script>
 
     <footer>
-
+        <p>Posted by: Cecy amorts</p>
+        <p>Contact information: <a href="mailto:cesar.herlop@yahoo.com.mx">
+                cesar.herlop@yahoo.com.mx</a>.</p>
     </footer>
 </body>
 </html>
